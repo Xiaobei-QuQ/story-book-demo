@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-
+    "storybook-chromatic": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -11,7 +11,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "chromatic": "CHROMATIC_APP_CODE=qa4v1s9aeon chromatic test  --do-not-start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -36,10 +37,10 @@
     "@storybook/react": "^5.1.9",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-test-renderer": "^16.8.6",
-    "require-context.macro": "^1.0.4",
-    "react-scripts": "3.0.1",
     "react-redux": "^7.1.0",
-    "redux": "^4.0.1"
+    "react-scripts": "3.0.1",
+    "react-test-renderer": "^16.8.6",
+    "redux": "^4.0.1",
+    "require-context.macro": "^1.0.4"
   }
 }
